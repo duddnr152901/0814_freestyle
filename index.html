@@ -1,0 +1,2273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>프리스타일 리부트 X 피카플레이 미션 이벤트</title>
+<meta name="description" content="프리스타일 리부트 X 피카플레이 미션 이벤트 참여하고 플레이 시간 보상을 획득하세요">
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+
+
+<!-- Open Graph / 카카오·페이스북 등 링크 미리보기 -->
+<!-- 배포 도메인이 정해지면 아래 [[…]] 플레이스홀더를 실제 값으로 교체하세요. -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="프리스타일 리부트 X 피카플레이 미션 이벤트">
+<meta property="og:title" content="프리스타일 리부트 X 피카플레이 미션 이벤트">
+<meta property="og:description" content="프리스타일 리부트 X 피카플레이 미션 이벤트 참여하고 플레이 시간 보상을 획득하세요">
+<meta property="og:url" content="https://ics.mediaweb.co.kr/_event/20260814_freestyle/index.html" />
+<meta property="og:image" content="https://ics.mediaweb.co.kr/_event/20260814_freestyle/assets/Thumbnail_800x400.jpg">
+<meta property="og:image:alt" content="프리스타일 리부트 X 피카플레이 미션 이벤트 참가하기">
+
+<!-- Twitter / X 카드 -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="프리스타일 리부트 X 피카플레이 미션 이벤트 참가하기">
+<meta name="twitter:description" content="프리스타일 리부트 X 피카플레이 미션 이벤트 참여하고 플레이 시간 보상을 획득하세요">
+<meta name="twitter:url" content="https://ics.mediaweb.co.kr/_event/20260814_freestyle/index.html" />
+<meta name="twitter:image" content="https://ics.mediaweb.co.kr/_event/20260814_freestyle/assets/Thumbnail_1200x630.jpg">
+<meta name="twitter:image:alt" content="프리스타일 리부트 X 피카플레이 미션 이벤트 참가하기">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+<style>
+:root {
+  --header-h: 80px;
+}
+
+.spanBlue {
+  color: #00a3d4;
+}
+
+.moBr {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .moBr {
+    display: block;
+  }
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #0d0b1a;
+  overflow: hidden;
+}
+
+html.fs--stacked {
+  height: auto;
+  overflow-y: auto;
+}
+html.fs--stacked body {
+  height: auto;
+  overflow: visible;
+}
+
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  border: 0;
+}
+
+a {
+  color: #ffd34d;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff06a;
+}
+
+button {
+  font-family: inherit;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+h2, h3, p, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+@keyframes fs-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+@keyframes kv-bob-lg {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-26px);
+  }
+}
+@keyframes kv-bob-md {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+@keyframes kv-bob-sm {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes kv-bob-xs {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+@keyframes fs-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 rgba(255, 45, 132, 0);
+  }
+  50% {
+    box-shadow: 0 0 34px rgba(255, 45, 132, 0.55);
+  }
+}
+@keyframes reward-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 rgba(182, 224, 44, 0);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(182, 224, 44, 0.6);
+  }
+}
+@keyframes kv-title-shine {
+  0% {
+    background-position: -150% 0%;
+  }
+  80%, 100% {
+    background-position: 250% 0%;
+  }
+}
+@keyframes cta-drow1 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100px;
+  }
+}
+@keyframes cta-drow2 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  11% {
+    opacity: 1;
+  }
+  100% {
+    width: 120px;
+  }
+}
+@keyframes cta-drow3 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80px;
+  }
+}
+@keyframes cta-drow4 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 120px;
+  }
+}
+@keyframes cta-drow5 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 124px;
+  }
+}
+.fs {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  background: #0d0b1a;
+}
+.fs:not(.fs--ready) .fs__page:not(.fs__page--kv) {
+  visibility: hidden;
+}
+.fs__page {
+  position: absolute;
+  inset: 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.fs__page::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+.fs__page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 20px 56px;
+  transition: transform 0.85s cubic-bezier(0.76, 0, 0.24, 1);
+  will-change: transform;
+}
+@media (min-width: 768px) {
+  .fs__page {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+.fs__page--kv {
+  padding: 0;
+  background: linear-gradient(180deg, #7fc8f0, #5aa9e6);
+}
+.fs__page--ev3 {
+  padding: 0;
+  align-items: stretch;
+  overflow-y: auto;
+  background: radial-gradient(120% 80% at 50% 0%, #241a4d 0%, #12102a 55%, #0d0b1a 100%);
+}
+.fs--stacked {
+  position: static;
+  overflow: visible;
+  height: auto;
+}
+.fs--stacked .fs__page {
+  position: relative;
+  inset: auto;
+  min-height: 100vh;
+  overflow: hidden;
+  transform: none !important;
+  transition: none;
+  will-change: auto;
+}
+.fs--stacked .fs__page--ev3 {
+  height: auto;
+  overflow: visible;
+}
+.fs__scroll {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.fs__nav {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0px;
+  z-index: 30;
+}
+@media (max-width: 1279px) {
+  .fs__nav {
+    display: none;
+  }
+}
+.fs__nav-btn {
+  display: block;
+  width: 290px;
+  padding: 20px 30px 20px 26px;
+  text-align: right;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #a5a5a5;
+  background-color: rgba(0, 0, 0, 0.5882352941);
+  transition: background 0.25s ease, color 0.25s ease;
+}
+.fs__nav-btn:hover {
+  background-color: #000000;
+  color: #fff;
+}
+.fs__nav-btn.is-active {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #31d0ff;
+  text-shadow: none;
+}
+
+.kv {
+  position: absolute;
+  inset: 0;
+  margin-top: 80px;
+}
+html.fs--stacked .kv {
+  margin-top: 0;
+}
+.kv__bg {
+  position: absolute;
+  inset: -20px;
+  z-index: 0;
+}
+.kv__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 1079px) {
+  .kv__bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+.kv__cloud {
+  position: absolute;
+  top: -27vh;
+  right: -8vh;
+}
+.kv__cloud img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+@media (max-width: 1079px) {
+  .kv__cloud {
+    display: none;
+  }
+}
+.kv__stage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 237vh;
+  aspect-ratio: 2560/1080;
+}
+.kv__stage--chars {
+  z-index: 1;
+}
+@media (max-width: 1079px) {
+  .kv__stage--chars {
+    display: none;
+  }
+}
+.kv__stage--deco {
+  z-index: 0;
+}
+.kv__stage--ui {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px;
+  padding-top: 70px;
+}
+@media (max-width: 768px) {
+  .kv__stage--ui {
+    padding-top: 24px;
+  }
+}
+.kv__ui-group {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+@media (max-width: 1079px) {
+  .kv__ui-group {
+    padding-top: 0px;
+  }
+}
+.kv [data-depth] {
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+}
+.kv__float {
+  width: 100%;
+  height: 100%;
+}
+.kv__enter {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1), opacity 0.7s ease-out;
+}
+.kv__enter--left {
+  transform: translateX(-70%);
+}
+.kv__enter--right {
+  transform: translateX(70%);
+}
+.kv__enter.is-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+.kv__char-lt {
+  position: absolute;
+  left: 15.5%;
+  top: 5%;
+  width: 30%;
+  height: 30%;
+}
+.kv__char-lt .kv__float {
+  animation: kv-bob-sm 3.4s ease-in-out infinite;
+}
+.kv__char-lt img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.kv__char-lb {
+  position: absolute;
+  left: -14%;
+  top: 25%;
+  width: 75%;
+  height: 120%;
+}
+.kv__char-lb .kv__float {
+  animation: kv-bob-lg 4.2s ease-in-out 0.6s infinite;
+}
+.kv__char-lb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+@media (max-width: 1600px) {
+  .kv__char-lb {
+    left: 9%;
+    top: 25%;
+    width: 50%;
+  }
+}
+@media (max-width: 1280px) {
+  .kv__char-lb {
+    left: 24%;
+    top: 10%;
+    width: 20%;
+  }
+}
+.kv__char-top {
+  position: absolute;
+  left: 58.5%;
+  top: 0%;
+  width: 8%;
+  height: 18%;
+  z-index: 3;
+  opacity: 0.8;
+}
+.kv__char-top .kv__float {
+  animation: kv-bob-xs 2.8s ease-in-out 0.3s infinite;
+}
+.kv__char-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.kv__char-rt {
+  position: absolute;
+  left: 60%;
+  top: 10%;
+  width: 20%;
+  height: 40%;
+  z-index: 2;
+}
+.kv__char-rt .kv__float {
+  animation: kv-bob-md 3.8s ease-in-out 0.9s infinite;
+}
+.kv__char-rt img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+@media (max-width: 1280px) {
+  .kv__char-rt {
+    left: 55%;
+  }
+}
+.kv__char-rb {
+  position: absolute;
+  left: 64%;
+  top: 26%;
+  width: 34%;
+  height: 80%;
+}
+.kv__char-rb .kv__float {
+  animation: kv-bob-lg 4.6s ease-in-out 1.2s infinite;
+}
+.kv__char-rb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+@media (max-width: 1280px) {
+  .kv__char-rb {
+    left: 50%;
+    width: 50%;
+  }
+}
+.kv__logo, .kv__kicker, .kv__title, .kv__info, .kv__cta {
+  opacity: 0;
+  transform: translateY(-60%);
+  transition: transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1), opacity 0.7s ease-out;
+}
+.kv__logo.is-in, .kv__kicker.is-in, .kv__title.is-in, .kv__info.is-in, .kv__cta.is-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.kv__logo {
+  width: 14%;
+}
+.kv__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.kv__kicker {
+  width: 30%;
+  height: 4%;
+  z-index: 10;
+  margin: 22px 0px;
+}
+.kv__kicker img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+@media (max-width: 499px) {
+  .kv__kicker {
+    width: 25%;
+    height: 3.6%;
+  }
+}
+@media (max-width: 375px) {
+  .kv__kicker {
+    width: 25%;
+    height: 5%;
+  }
+}
+.kv__title {
+  position: relative;
+  width: 40%;
+  height: 40%;
+  z-index: 10;
+}
+@media (max-width: 499px) {
+  .kv__title {
+    width: 29%;
+    height: 29%;
+  }
+}
+.kv__title img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.kv__title::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.425) 50%, rgba(255, 255, 255, 0) 70%);
+  background-repeat: no-repeat;
+  background-size: 300% 300%;
+  background-position: -150% 0%;
+  -webkit-mask-image: url("assets/img/kv/title.webp");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-image: url("assets/img/kv/title.webp");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  animation: kv-title-shine 3s linear infinite;
+  pointer-events: none;
+}
+.kv__info {
+  width: 46%;
+  z-index: 10;
+  margin-top: -40px;
+  margin-bottom: -40px;
+}
+@media (max-width: 1079px) {
+  .kv__info {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+.kv__info-box {
+  aspect-ratio: 797.5/252.5;
+  background-image: url("assets/img/kv/infoBox_3.svg");
+  background-size: 100% 116%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1079px) {
+  .kv__info-box {
+    aspect-ratio: auto;
+    background-image: none;
+  }
+}
+.kv__info-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 12% 0 12%;
+}
+.kv__info-inner.disable {
+  display: none;
+}
+@media (max-width: 1079px) {
+  .kv__info-inner.disable {
+    display: flex;
+    height: auto;
+    margin-top: 20px;
+  }
+}
+.kv__info-headline {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.5;
+  text-align: center;
+}
+@media (max-width: 499px) {
+  .kv__info-headline {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+}
+.kv__info-headline em {
+  font-style: normal;
+  color: #ffd34d;
+  background: rgba(255, 184, 0, 0.22);
+  padding: 0 4px;
+}
+.kv__info-row {
+  margin-top: 8px;
+  font-size: 20px;
+  color: #e2ddf5;
+  text-align: center;
+}
+@media (max-width: 499px) {
+  .kv__info-row {
+    margin-top: 4px;
+    font-size: 16px;
+  }
+}
+.kv__info-row strong {
+  color: #b6e02c;
+  font-weight: 800;
+  margin-right: 2px;
+}
+.kv__cta {
+  width: 17%;
+  height: 17%;
+  z-index: 10;
+  margin-top: 40px;
+}
+.kv__cta-btn {
+  position: relative;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.kv__cta-btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+.kv__cta-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.kv__cta-text {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: clamp(46px, 15vw, 21px);
+  letter-spacing: 0.05em;
+  color: #2a1500;
+  pointer-events: none;
+}
+.kv__cta-spray {
+  position: absolute;
+  top: 34%;
+  left: 20%;
+  width: 0;
+  height: 0;
+  z-index: 1;
+}
+.kv__cta-drow1, .kv__cta-drow2 {
+  position: absolute;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+  background: #ff8839;
+}
+.kv__cta-drow1 {
+  top: -16px;
+  left: 40px;
+  width: 32px;
+  height: 0;
+  transform: rotate(30deg);
+}
+.kv__cta-drow2 {
+  top: 44px;
+  left: 77px;
+  width: 32px;
+  height: 0;
+  transform: rotate(-127deg);
+}
+.kv__cta-drow1::before, .kv__cta-drow1::after, .kv__cta-drow2::before, .kv__cta-drow2::after {
+  content: "";
+  position: absolute;
+  background: #ff8839;
+}
+.kv__cta-drow1::before {
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 32px;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+  transform: rotate(-60deg);
+}
+.kv__cta-drow1::after {
+  top: -10px;
+  left: 45px;
+  width: 0;
+  height: 32px;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+  transform: rotate(69deg);
+}
+.kv__cta-drow2::before {
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 32px;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+  transform: rotate(-146deg);
+}
+.kv__cta-drow2::after {
+  bottom: 26px;
+  left: -40px;
+  width: 0;
+  height: 32px;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+  transform: rotate(-262deg);
+}
+.kv__cta-btn:hover .kv__cta-drow1 {
+  animation: cta-drow1 ease-in 0.06s forwards;
+}
+.kv__cta-btn:hover .kv__cta-drow1::before {
+  animation: cta-drow2 linear 0.08s 0.06s forwards;
+}
+.kv__cta-btn:hover .kv__cta-drow1::after {
+  animation: cta-drow3 linear 0.03s 0.14s forwards;
+}
+.kv__cta-btn:hover .kv__cta-drow2 {
+  animation: cta-drow4 linear 0.06s 0.2s forwards;
+}
+.kv__cta-btn:hover .kv__cta-drow2::before {
+  animation: cta-drow3 linear 0.03s 0.26s forwards;
+}
+.kv__cta-btn:hover .kv__cta-drow2::after {
+  animation: cta-drow5 linear 0.06s 0.32s forwards;
+}
+.kv__bgline {
+  position: absolute;
+  z-index: 20;
+  pointer-events: none;
+}
+.kv__bgline img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+@media (max-width: 1079px) {
+  .kv__bgline {
+    display: none;
+  }
+}
+.kv__bgline--pos11 {
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 10%;
+}
+.kv__bgline--pos1 {
+  top: -25vh;
+  right: 16vh;
+  width: 72vh;
+  height: 66vh;
+}
+.kv__bgline--pos7 {
+  bottom: -50vh;
+  left: -42vh;
+  width: 100vh;
+  height: 100vh;
+}
+.kv__bgline--pos5 {
+  bottom: 0;
+  right: 0;
+  width: 10%;
+  height: 10%;
+  transform: scale(-1);
+}
+
+.sec-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.sec-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sec-dim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.767);
+  pointer-events: none;
+}
+
+.sec__inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1040px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+.sec__inner--narrow {
+  max-width: 960px;
+}
+
+.sec__title {
+  position: relative;
+  font-size: clamp(26px, 4.6vw, 56px);
+  font-weight: 900;
+  line-height: 1.1;
+  color: #181818;
+  margin-bottom: 12px;
+}
+.sec__title .c-lime {
+  color: #b6e02c;
+  font-style: normal;
+}
+.sec__title .c-gold {
+  color: #ff9900;
+  font-style: normal;
+}
+.sec__title .c-pink {
+  color: #e73ee5;
+  font-style: normal;
+}
+.sec__title .c-cyan {
+  color: #31d0ff;
+  font-style: normal;
+}
+
+.sec__sub {
+  font-size: clamp(20px, 3vw, 24px);
+  font-weight: 500;
+  color: #3d3d3d;
+}
+
+.sec__notes {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.sec__notes p {
+  font-size: clamp(13px, 1.8vw, 15px);
+  font-weight: 500;
+  color: #3d3d3d;
+}
+
+.fs__page--ev2 .sec__title {
+  color: #ffffff;
+}
+.fs__page--ev2 .sec__sub {
+  color: #e2ddf5;
+}
+
+.badge {
+  padding: 14px 40px;
+  border-radius: 999px;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
+}
+.badge--pink {
+  background: #e73ee5;
+  color: #ffffff;
+}
+.badge--lime {
+  background: #b6e02c;
+  color: #16202a;
+}
+.badge--cyan {
+  background: #31d0ff;
+  color: #0c2233;
+}
+.badge--blue {
+  background: #00a3d4;
+  color: #ffffff;
+}
+
+.reward {
+  position: relative;
+  width: 100%;
+  margin-top: 14px;
+  height: 100%;
+}
+.reward__inner {
+  position: relative;
+  z-index: 1;
+  padding: 10px;
+  clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 30px 100%, 0 calc(100% - 30px));
+  background: #b6e02c;
+  animation: reward-glow 3.4s ease-in-out infinite;
+  width: 100%;
+  aspect-ratio: 1672/941;
+}
+.reward__inner.blue {
+  background: #00a3d4;
+}
+.reward__inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  clip-path: polygon(0 0, calc(100% - 24px) 0, 100% 24px, 100% 100%, 24px 100%, 0 calc(100% - 24px));
+}
+.reward__deco {
+  position: absolute;
+  right: 90%;
+  bottom: 18%;
+  width: clamp(190px, 23vw, 1560px);
+  z-index: 2;
+  pointer-events: none;
+  animation: kv-bob-md 3.4s ease-in-out infinite;
+}
+@media (max-width: 1279px) {
+  .reward__deco {
+    display: none;
+  }
+}
+.reward__deco--2 {
+  left: 84%;
+  top: 48%;
+  width: clamp(190px, 14vw, 760px);
+  animation: kv-bob-md 3.4s ease-in-out 0.4s infinite;
+}
+.reward__deco2 {
+  position: absolute;
+  right: 94%;
+  bottom: -10%;
+  width: clamp(190px, 23vw, 1560px);
+  z-index: 2;
+  pointer-events: none;
+  width: 55%;
+  animation: kv-bob-md 3.4s ease-in-out infinite;
+}
+@media (max-width: 1279px) {
+  .reward__deco2 {
+    display: none;
+  }
+}
+.reward__deco3 {
+  position: absolute;
+  right: -10%;
+  bottom: -20%;
+  width: clamp(190px, 23vw, 1560px);
+  z-index: 2;
+  pointer-events: none;
+  width: 15%;
+  animation: kv-bob-md 3.4s ease-in-out infinite;
+}
+@media (max-width: 1279px) {
+  .reward__deco3 {
+    display: none;
+  }
+}
+.reward__deco4 {
+  position: absolute;
+  right: -20%;
+  bottom: 0%;
+  width: clamp(190px, 23vw, 1560px);
+  z-index: 2;
+  pointer-events: none;
+  width: 15%;
+  animation: kv-bob-sm 2.6s ease-in-out 0.7s infinite;
+}
+@media (max-width: 1279px) {
+  .reward__deco4 {
+    display: none;
+  }
+}
+.reward__deco5 {
+  position: absolute;
+  right: 80%;
+  bottom: 50%;
+  width: clamp(120px, 24vw, 2320px);
+  z-index: 2;
+  pointer-events: none;
+  animation: kv-bob-sm 2.6s ease-in-out 0.7s infinite;
+}
+@media (max-width: 1279px) {
+  .reward__deco5 {
+    display: none;
+  }
+}
+.reward__deco6 {
+  position: absolute;
+  right: -15%;
+  bottom: -20%;
+  width: clamp(120px, 18vw, 220px);
+  z-index: 2;
+  pointer-events: none;
+  animation: kv-bob-sm 2.6s ease-in-out 0.7s infinite;
+}
+@media (max-width: 1279px) {
+  .reward__deco6 {
+    display: none;
+  }
+}
+.reward__note {
+  width: 100%;
+  margin-top: 18px;
+  text-align: center;
+  font-size: clamp(18px, 2.2vw, 22px);
+  font-weight: 500;
+  color: #000000;
+}
+.reward__note em {
+  font-style: normal;
+  font-weight: 700;
+  color: #ff6fae;
+}
+
+.steps-wrap {
+  position: relative;
+  width: 100%;
+}
+.steps-wrap__deco {
+  position: absolute;
+  left: 84%;
+  top: 10%;
+  width: clamp(140px, 16vw, 320px);
+  z-index: 2;
+  pointer-events: none;
+  animation: kv-bob-md 3.6s ease-in-out infinite;
+}
+@media (max-width: 1279px) {
+  .steps-wrap__deco {
+    display: none;
+  }
+}
+.steps-wrap__deco--2 {
+  left: 90%;
+  top: 32%;
+  width: clamp(120px, 13vw, 260px);
+  z-index: 3;
+  animation: kv-bob-sm 3s ease-in-out 0.5s infinite;
+}
+
+.steps {
+  width: 100%;
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.step {
+  position: relative;
+  overflow: hidden;
+  padding: 0 22px 40px;
+  text-align: center;
+  border-radius: 18px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #b6e02c;
+  background-color: #000;
+  background: linear-gradient(to top, rgba(217, 255, 92, 0.253) 0%, rgba(0, 0, 0, 0.88) 10%, rgba(217, 255, 92, 0) 100%);
+}
+.step::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+.step__thumb {
+  position: relative;
+  margin: 0 -22px 20px;
+  padding: 30px 28px 0;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+.step__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.step__no {
+  display: block;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  color: #fff;
+  padding-top: 14px;
+}
+.step__divider {
+  display: block;
+  width: 200px;
+  height: 2px;
+  margin: 10px auto 16px;
+  background: #818181;
+}
+.step__title {
+  margin: 0 0 10px;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.35;
+  color: #d9ff5c;
+}
+.step__desc {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #f5f5f5;
+  text-wrap: pretty;
+}
+.step__desc strong {
+  display: inline-block;
+  margin-top: 2px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.usage {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.usage .sec__inner {
+  margin: 0 auto;
+  padding: 64px clamp(20px, 5vw, 72px) 56px;
+}
+.usage__grid {
+  width: 100%;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 16px;
+}
+
+.usecard {
+  border-radius: 18px;
+  padding: 2px;
+  background: linear-gradient(140deg, #ff9900, #e73ee5);
+}
+.usecard--online {
+  background: linear-gradient(140deg, #31d0ff, #b6e02c);
+}
+.usecard__inner {
+  height: 100%;
+  padding: 28px 24px;
+  border-radius: 16px;
+  background: #161231;
+  text-align: left;
+}
+.usecard__kind {
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  color: #ff9900;
+}
+.usecard--online .usecard__kind {
+  color: #31d0ff;
+}
+.usecard__title {
+  margin: 10px 0 8px;
+  font-size: 23px;
+  font-weight: 900;
+  color: #ffffff;
+}
+.usecard__desc {
+  font-size: 14px;
+  line-height: 1.75;
+  color: #a9a2ce;
+}
+
+.cta-row {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn-play {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 50px;
+  border-radius: 999px;
+  font-size: clamp(20px, 3vw, 28px);
+  font-weight: 900;
+  color: #2a1500;
+  background: linear-gradient(180deg, #ffd34d, #ffa412);
+  box-shadow: 0 10px 0 #b96f00, 0 20px 40px rgba(255, 164, 18, 0.35);
+}
+.btn-play span {
+  font-size: 0.85em;
+}
+.btn-play:hover {
+  color: #2a1500;
+}
+
+.period {
+  margin-top: 18px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.notice {
+  position: relative;
+  width: 100%;
+  background: #000;
+}
+.notice__inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: clamp(40px, 5vw, 64px) clamp(20px, 5vw, 72px) clamp(48px, 6vw, 72px);
+  display: grid;
+  gap: 22px;
+}
+.notice__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.notice__title {
+  font-size: clamp(19px, 2.8vw, 26px);
+  font-weight: 900;
+  color: #ffffff;
+}
+.notice__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.notice__list li {
+  position: relative;
+  padding-left: 14px;
+  font-size: clamp(13px, 1.6vw, 15px);
+  line-height: 1.75;
+  color: #e2ddf5;
+  text-wrap: pretty;
+}
+.notice__list li::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  color: #ffffff;
+}
+.notice__tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 900;
+  color: #ff9900;
+  background: rgba(255, 153, 0, 0.16);
+}
+
+.foot {
+  width: 100%;
+  padding: 26px 20px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.9;
+  color: #7b7690;
+  background: #1c1a26;
+}
+
+.cb-header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: var(--header-h);
+  background: linear-gradient(90deg, #000 0%, #060712 100%);
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.13);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cb-header__inner {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+.cb-header__notice-wrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 112px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.toggle-btn__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cb-header__notice {
+  font-size: clamp(14px, 1.25vw, 18px);
+  color: #fff;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+.cb-header__notice u {
+  text-decoration: underline;
+}
+.cb-header__notice b {
+  font-weight: 700;
+}
+.cb-header__notice a {
+  color: #469CFF;
+  text-decoration: none;
+}
+.cb-header__notice a:hover u {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .cb-header {
+    height: auto;
+    min-height: var(--header-h);
+    overflow: visible;
+  }
+  .cb-header__notice {
+    white-space: normal;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+}
+.btn-share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 16px;
+  height: 46px;
+  cursor: pointer;
+  white-space: nowrap;
+  min-height: 44px;
+  transition: opacity 0.2s;
+  box-sizing: border-box;
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+.mobile-fab {
+  display: none;
+  position: fixed;
+  right: 16px;
+  bottom: max(20px, env(safe-area-inset-bottom, 0px));
+  z-index: 1800;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.mobile-fab__btn {
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  color: #111;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
+  cursor: pointer;
+  padding: 0;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.mobile-fab__btn img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  filter: none;
+}
+
+.mobile-fab__btn--top {
+  font-family: "Pretendard", "Malgun Gothic", -apple-system, system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  background: #f0f0f2;
+  color: #111;
+}
+.mobile-fab__btn--top:hover {
+  background: #e4e4e8;
+}
+
+.copy-toast {
+  position: fixed;
+  left: 50%;
+  top: calc(var(--header-h) + 12px);
+  transform: translate(-50%, 12px);
+  background: #fff;
+  color: #111;
+  font-family: "Pretendard", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 14px 22px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2000;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+.copy-toast.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.share-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2100;
+  padding: 20px;
+}
+.share-modal.is-open {
+  display: flex;
+}
+
+.share-modal__dialog {
+  background: #fff;
+  border-radius: 20px;
+  padding: 32px 24px 28px;
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  animation: shareModalIn 0.18s ease-out;
+}
+
+@keyframes shareModalIn {
+  from {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.share-modal__title {
+  font-family: "Pretendard", sans-serif;
+  color: #111;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.share-modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 26px;
+  color: #555;
+  line-height: 1;
+  border-radius: 50%;
+  transition: background 0.15s;
+}
+.share-modal__close:hover {
+  background: #f0f0f0;
+}
+
+.share-modal__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.share-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 4px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background 0.15s;
+  min-height: 44px;
+}
+.share-item:hover {
+  background: #f5f5f7;
+}
+
+.share-item__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.share-item__icon svg {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.share-item--kakao .share-item__icon {
+  background: #FEE500;
+  color: #181600;
+}
+
+.share-item--facebook .share-item__icon {
+  background: #1877F2;
+}
+
+.share-item--twitter .share-item__icon {
+  background: #000;
+}
+
+.share-item--naver .share-item__icon {
+  background: #03C75A;
+}
+
+.share-item--instagram .share-item__icon {
+  background: linear-gradient(135deg, #feda75 0%, #fa7e1e 25%, #d62976 50%, #962fbf 75%, #4f5bd5 100%);
+}
+
+.share-item--copy .share-item__icon {
+  background: #2c2c32;
+}
+
+.share-item__label {
+  font-family: "Pretendard", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .share-modal__dialog {
+    padding: 28px 18px 22px;
+  }
+  .share-modal__grid {
+    gap: 8px;
+  }
+  .share-item__icon {
+    width: 52px;
+    height: 52px;
+  }
+  .share-item__icon svg {
+    width: 26px;
+    height: 26px;
+  }
+  .share-item__label {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1024px) {
+  .cb-header {
+    height: auto;
+    min-height: var(--header-h);
+    padding: 10px 0;
+  }
+  .cb-header__inner {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: min(24px, 2vw);
+    padding: 0 24px;
+  }
+  .cb-header__notice-wrap {
+    flex: 1 1 0;
+    min-width: 0;
+    align-items: flex-start;
+  }
+  .cb-header__notice {
+    flex: 1 1 auto;
+    white-space: normal;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    min-width: 0;
+  }
+}
+@media (max-width: 768px) {
+  .cb-header {
+    height: auto;
+    min-height: var(--header-h);
+    overflow: visible;
+    align-items: stretch;
+    padding: 12px 0;
+  }
+  .cb-header__inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 0 max(12px, env(safe-area-inset-left, 0px)) 0 max(12px, env(safe-area-inset-right, 0px));
+    min-width: 0;
+    box-sizing: border-box;
+  }
+  .cb-header__notice-wrap {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    justify-content: center;
+    gap: 0;
+    align-items: stretch;
+    flex: none;
+    overflow: visible;
+  }
+  .cb-header__notice {
+    text-align: center;
+    font-size: clamp(12px, 3.6vw, 17px);
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    white-space: normal;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+    overflow: visible;
+  }
+  .toggle-btn,
+  .btn-share {
+    display: none;
+  }
+  .mobile-fab {
+    display: flex;
+  }
+}
+</style>
+
+<!-- [BACKEND] Kakao JavaScript SDK (카카오톡 공유용)
+     https://developers.kakao.com — 하단 SHARE_CONFIG.kakaoKey 에 JavaScript 키를 넣어 주세요. -->
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.4/kakao.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- ═══════════════════════════════
+     HEADER
+════════════════════════════════ -->
+<header class="cb-header" id="top">
+  <div class="cb-header__inner">
+    <div class="cb-header__notice-wrap">
+      <!-- PC방 토글 -->
+      <button class="toggle-btn" type="button" id="pcRoomToggle" data-state="off" aria-label="PC방 모드 토글">
+        <img class="toggle-btn__img" src="assets/off=off.webp" alt="PC방 모드 OFF" loading="lazy" />
+      </button>
+      <!-- [BACKEND] 공지 텍스트 동적 교체: header_notice_text -->
+      <p class="cb-header__notice">
+        본 이벤트는 <a href="https://picaplay.com/pcbang/main.do" target="_blank" rel="noopener noreferrer"><u>피카플레이 가맹 PC방</u></a> 또는 <b>개인PC에서</b> <a href="https://www.craftbox.co.kr/" target="_blank" rel="noopener noreferrer"><u>크래프트박스 설치</u></a> 후 참여 가능합니다.
+      </p>
+    </div>
+    <!-- [BACKEND] 공유하기 버튼 - share_url 교체 -->
+    <button class="btn-share" type="button" id="btnShare" aria-label="공유하기">
+      <img src="assets/share_icon.svg" alt="share icon" />
+      <span>공유하기</span>
+    </button>
+  </div>
+</header>
+
+<main class="fs" id="fs">
+
+  <!-- ================= SECTION 0 : KV ================= -->
+  <section class="fs__page fs__page--kv" data-page="0">
+    <div class="kv">
+      <div class="kv__bg" data-depth="4"><img src="assets/img/kv/kvBg.webp" alt="" /></div>
+
+      <!-- 캐릭터 스테이지 : 배경보다 위, 구름보다 아래 -->
+      <div class="kv__stage kv__stage--chars">
+        <div class="kv__char-lt" data-depth="10">
+          <div class="kv__enter kv__enter--left"><div class="kv__float"><img src="assets/img/kv/char-lt.webp" alt="좌측 상단 캐릭터" /></div></div>
+        </div>
+        <div class="kv__char-lb" data-depth="26">
+          <div class="kv__enter kv__enter--left"><div class="kv__float"><img src="assets/img/kv/manMain.webp" alt="좌측 메인 캐릭터" /></div></div>
+        </div>
+        <div class="kv__char-top" data-depth="8">
+          <div class="kv__enter kv__enter--right"><div class="kv__float"><img src="assets/img/kv/char-top.webp" alt="상단 점프 캐릭터" /></div></div>
+        </div>
+        <div class="kv__char-rt" data-depth="12">
+          <div class="kv__enter kv__enter--right"><div class="kv__float"><img src="assets/img/kv/char-rt.webp" alt="우측 상단 캐릭터" /></div></div>
+        </div>
+        <div class="kv__char-rb" data-depth="26">
+          <div class="kv__enter kv__enter--right"><div class="kv__float"><img src="assets/img/kv/char-rb1.webp" alt="우측 메인 캐릭터" /></div></div>
+        </div>
+      </div>
+
+      <!-- 구름 스테이지 : 캐릭터 스테이지와 같은 고정(vh 기준) 박스를 기준으로 앵커링 -->
+      <div class="kv__stage kv__stage--deco">
+        <!-- <div class="kv__cloud"><img src="assets/img/kv/cloudRight.png" alt="" /></div> -->
+      </div>
+
+      <!-- 타이틀/UI 스테이지 : 구름보다 항상 위 -->
+      <div class="kv__stage kv__stage--ui">
+        <!-- 키커/타이틀/안내박스/CTA 묶음 : 이 그룹 하나만 움직이면 전체가 같이 이동 -->
+        <div class="kv__ui-group">
+          <div class="kv__logo">
+            <img src="assets/img/kv/logoarea.webp" alt="로고 락업" />
+          </div>
+          <div class="kv__kicker">
+            <img src="assets/img/kv/kicker.webp" alt="상단 문구" />
+          </div>
+          <div class="kv__title">
+            <img src="assets/img/kv/title.webp" alt="메인 타이틀" />
+          </div>
+          <div class="kv__info">
+            <div class="kv__info-box">
+              <div class="kv__info-inner disable">
+                <p class="kv__info-headline">피카 PC방에서 <em>프리스타일 리부트</em>를<br />플레이하고 보상을 획득하세요.</p>
+                <p class="kv__info-row"><strong>이벤트 기간</strong>: 2026. 08. 14(금) - 2026. 09. 03(목)</p>
+                <p class="kv__info-row"><strong>참여대상</strong>: 피카플레이 회원 대상</p>
+              </div>
+            </div>
+          </div>
+          <div class="kv__cta">
+            <a href="https://fs1reboot.joycity.com/web/main.do" class="kv__cta-btn" target="_blank">
+              <img class="kv__cta-bg" src="assets/img/kv/startButton1.webp" alt="" />
+
+              <span class="kv__cta-text"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 배경 라인 장식(1시/7시) : 구름과 같은 고정 스테이지 기준. 마우스 패럴랙스 최대 강도 + 마지막 순서로 슬라이드 등장 -->
+      <div class="kv__stage kv__stage--deco">
+        <!-- <div class="kv__bgline kv__bgline--pos1" data-depth="55">
+          <div class="kv__bgline-enter kv__bgline-enter--top"><img src="assets/img/kv/bgLine.png" alt="" /></div>
+        </div>
+        <div class="kv__bgline kv__bgline--pos7" data-depth="55">
+          <div class="kv__bgline-enter kv__bgline-enter--bottom"><img src="assets/img/kv/bgLine.png" alt="" /></div>
+        </div> -->
+      </div>
+
+      <!-- 우측 끝 파란 배경이 도드라지는 부분만 살짝 딤 (그라데이션으로 자연스럽게) -->
+      <div class="kv__right-dim"></div>
+
+    </div>
+  </section>
+
+  <!-- ================= SECTION 1 : EVENT 01 ================= -->
+  <section class="fs__page fs__page--ev1" data-page="1">
+    <div class="sec-bg"><img src="assets/img/bg/sec1Bg2.webp" alt="" /></div>
+  
+    <div class="sec__inner sec__inner--narrow">
+      <span class="badge badge--pink">EVENT 01</span>
+      <h2 class="sec__title">피카 가맹 PC방에서 매일<br /><em class="c-pink">프리스타일 리부트 30분 플레이하고 2,000M</em> 받아가세요~</h2>
+      <p class="sec__sub">피카 가맹 PC방에서 프리스타일 리부트를 플레이하면 마일리지가 쌓입니다</p>
+
+      <div class="reward">
+        <div class="reward__inner">
+          <img src="assets/img/kv/event01Img.webp" alt="" />
+        </div>
+        <p class="reward__note">일일 1회 플레이 미션 완료 시 2,000M 지급 <br> <em>(소진 시까지 참여 가능)</em></p>
+        <img class="reward__deco" src="assets/img/kv/char-rt.webp" alt="" aria-hidden="true" />
+        <img class="reward__deco reward__deco--2" src="assets/img/bg/tickets.webp" alt="" aria-hidden="true" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 2 : EVENT 02 ================= -->
+  <section class="fs__page fs__page--ev2" data-page="2">
+    <div class="sec-bg"><img src="assets/img/bg/sec2Bg.webp" alt="" /></div>
+   
+    <div class="sec__inner">
+      <span class="badge badge--lime">EVENT 02</span>
+      <h2 class="sec__title"><em class="c-lime">이벤트 </em>참여방법</h2>
+     
+      <div class="steps-wrap">
+        <ol class="steps">
+            <li class="step step--01">
+              <div class="step__thumb"><img src="assets/img/kv/stpe2_01.webp" alt="" /></div>
+              <span class="step__no">STEP 01</span>
+              <span class="step__divider" aria-hidden="true"></span>
+              <h3 class="step__title">피카플레이 회원으로 로그인</h3>
+              <p class="step__desc">피카 PC방 좌석에서<br />피카플레이 회원으로 로그인하세요</p>
+            </li>
+            <li class="step step--02">
+              <div class="step__thumb"><img src="assets/img/kv/stpe2_02.webp" alt="" /></div>
+              <span class="step__no">STEP 02</span>
+              <span class="step__divider" aria-hidden="true"></span>
+              <h3 class="step__title">프리스타일 리부트 플레이</h3>
+              <p class="step__desc">하루 30분 이상 플레이하면 미션 달성,<br />소진 시까지 누적 보상 획득 가능</p>
+            </li>
+            <li class="step step--03">
+              <div class="step__thumb"><img src="assets/img/kv/stpe2_03.webp" alt="" /></div>
+              <span class="step__no">STEP 03</span>
+              <span class="step__divider" aria-hidden="true"></span>
+              <h3 class="step__title">마일리지 보상 확인</h3>
+              <p class="step__desc">피카플레이 APP 또는 크래프트박스<br />마이페이지에서 지급 내역을 확인하세요</p>
+            </li>
+        </ol>
+        <img class="reward__deco2" src="assets/img/kv/char_2.webp" alt="" aria-hidden="true" />
+        <img class="reward__deco3" src="assets/img/kv/deco3.webp" alt="" aria-hidden="true" />
+        <img class="reward__deco4" src="assets/img/kv/deco4.webp" alt="" aria-hidden="true" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 3 : EVENT 03 + 유의사항 + 푸터 ================= -->
+  <section class="fs__page fs__page--ev3" data-page="3">
+    <div class="fs__scroll">
+
+      <div class="usage">
+        <div class="sec-bg"><img src="assets/img/bg/sec3Bg.webp" alt="" /></div>
+    <div class="sec__inner sec__inner--narrow">
+      <span class="badge badge--blue">EVENT 03</span>
+      <h2 class="sec__title"> <span class="spanBlue">마일리지</span> 사용처</h2>
+      <p class="sec__sub">피카 가맹 PC방에서 요금제 및 <br class="moBr"> 먹거리 결제 크래프트박스 또는<br>
+                          피카플레이 APP에서<br class="moBr"> <span class="spanBlue">모바일 문화상품권</span> 으로 교환</p>
+
+      <div class="sec__notes">
+        <p>✻ 미션으로 지급되는 마일리지의 유효기간은 90일 입니다.</p>
+        <p>✻ 일부 매장에서는 마일리지 사용이 제한 될 수 있습니다.</p>
+      </div>
+
+      <div class="reward">
+        <div class="reward__inner blue">
+          <img src="assets/img/kv/mileage-usage-img.webp" alt="" />
+        </div>
+        
+        <img class="reward__deco5" src="assets/img/kv/char-lt.webp" alt="" aria-hidden="true" />
+        <img class="reward__deco6" src="assets/img/kv/deco6.webp" alt="" aria-hidden="true" />
+      
+      </div>
+
+      <div class="cta-row">
+        <a class="btn-play" target="_blank" href="https://ics.mediaweb.co.kr/_event/20231115_picapayGuide/picapay.html">PC방 참여방법<span aria-hidden="true">▶</span></a>
+      </div>
+    </div>
+      </div>
+
+      <div class="notice">
+        <!-- 유의사항 배경 미등록: <div class="sec-bg"><img src="assets/img/bg/notice.jpg" alt="" /></div> -->
+        <div class="notice__inner">
+          <div class="notice__head">
+            <h3 class="notice__title">유의사항</h3>
+          </div>
+          <ul class="notice__list">
+            <li>본 이벤트는 피카플레이 회원 전용 이벤트입니다. <a href="https://blog.naver.com/playcraftbox/223126575684" target="_blank" class="notice__tag">[연동방법]</a></li>
+            <li>본 이벤트는 피카 가맹 PC방에서 참여가 가능하며, 중복 참여는 불가합니다.</li>
+            <li>본 이벤트는 PC방에서 피카플레이 계정으로 로그인 후 참여가 가능합니다.</li>
+            <li>본 이벤트는 계정당 1일 1회, 마일리지 소진 시까지 참여 가능합니다.</li>
+            <li>본 이벤트는 마일리지 소진 현황에 따라 조기 종료 또는 연장될 수 있습니다.</li>
+            <li>이벤트 참여 전 크래프트박스 → 혜택박스 → 미션상세팝업 내 이벤트 참여 가능 여부를 확인해 주세요.</li>
+            <li>게임 플레이 시간 반영은 최대 30분 정도의 지연 시간이 발생할 수 있습니다.</li>
+            <li>지급받은 마일리지는 90일의 유효기간 경과 시 자동 소멸됩니다.</li>
+            <li>이벤트 종료 표기는 실시간으로 반영되지 않을 수 있습니다.</li>
+            <li>부정한 방법으로 이벤트에 참여한 이력이 확인될 경우 지급된 보상이 회수 될 수 있습니다.</li>
+            <li>미션 마일리지 오프라인 사용은 ‘마일리지 가맹PC방’에서 먹거리, 요금제 구매 시 사용 가능합니다.</li>
+            <li>미션 마일리지 온라인 사용은 피카플레이 APP 또는 크래프트박스 혜택박스에서 모바일 문화상품권으로 교환 가능합니다.</li>
+            <li>이벤트 관련 문의 및 불편사항은 피카플레이 또는 크래프트박스 고객센터 1:1 문의를 이용해 주세요.</li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <nav class="fs__nav" id="fsNav" aria-label="섹션 이동">
+    <button type="button" class="fs__nav-btn is-active" data-go="0">메인</button>
+    <button type="button" class="fs__nav-btn" data-go="1">미션 안내</button>
+    <button type="button" class="fs__nav-btn" data-go="2">참여방법</button>
+    <button type="button" class="fs__nav-btn" data-go="3">마일리지 사용처</button>
+  </nav>
+
+</main>
+
+<!-- ═══════════════════════════════
+     공유하기 모달
+════════════════════════════════ -->
+<div id="shareModal" class="share-modal" role="dialog" aria-modal="true" aria-labelledby="shareModalTitle" aria-hidden="true">
+  <div class="share-modal__dialog" role="document">
+    <button type="button" class="share-modal__close" id="shareModalClose" aria-label="닫기">&times;</button>
+    <h2 id="shareModalTitle" class="share-modal__title">공유하기</h2>
+    <div class="share-modal__grid">
+      <button type="button" class="share-item share-item--kakao" data-share="kakao" aria-label="카카오톡으로 공유">
+        <span class="share-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.48 3 2 6.58 2 11c0 2.83 1.86 5.32 4.66 6.73L5.5 21.5l4.2-2.47c.76.11 1.54.17 2.3.17 5.52 0 10-3.58 10-8S17.52 3 12 3z"/></svg>
+        </span>
+        <span class="share-item__label">카카오톡</span>
+      </button>
+      <button type="button" class="share-item share-item--facebook" data-share="facebook" aria-label="페이스북으로 공유">
+        <span class="share-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.4 0-4.1 1.5-4.1 4.2v2.3H7.5v3.1h2.6V21h3.4z"/></svg>
+        </span>
+        <span class="share-item__label">페이스북</span>
+      </button>
+      <button type="button" class="share-item share-item--twitter" data-share="twitter" aria-label="트위터(X)로 공유">
+        <span class="share-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.451-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
+        </span>
+        <span class="share-item__label">트위터</span>
+      </button>
+      <button type="button" class="share-item share-item--naver" data-share="naver" aria-label="네이버 블로그로 공유">
+        <span class="share-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.91 12.03 9.94 6H6v12h4.09v-6.03L14.06 18H18V6h-4.09z"/></svg>
+        </span>
+        <span class="share-item__label">네이버블로그</span>
+      </button>
+      <button type="button" class="share-item share-item--instagram" data-share="instagram" aria-label="인스타그램 공유용 URL 복사">
+        <span class="share-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </span>
+        <span class="share-item__label">인스타그램</span>
+      </button>
+      <button type="button" class="share-item share-item--copy" data-share="copy" aria-label="URL 복사">
+        <span class="share-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        </span>
+        <span class="share-item__label">URL 복사</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- 복사 토스트와 모바일 공유하기 플로팅 버튼 -->
+<div id="copyToast" class="copy-toast" role="status" aria-live="polite">클립보드에 복사되었습니다.</div>
+<div class="mobile-fab" role="group" aria-label="모바일 플로팅 버튼">
+  <button class="mobile-fab__btn" type="button" id="btnShareFloating" aria-label="공유하기">
+    <img src="assets/share_icon.svg" alt="" aria-hidden="true" loading="lazy" />
+  </button>
+  <button class="mobile-fab__btn mobile-fab__btn--top" type="button" id="btnScrollTop" aria-label="맨 위로">
+    <span aria-hidden="true">TOP</span>
+  </button>
+</div>
+
+<script>
+  // ── PC방 토글 이미지 상태 (백엔드 연동용) ──
+  function setPcRoomToggleState(isPcRoom) {
+    var toggleBtn = document.getElementById('pcRoomToggle');
+    if (!toggleBtn) { return; }
+    var toggleImg = toggleBtn.querySelector('.toggle-btn__img');
+    if (!toggleImg) { return; }
+    var isOn = Boolean(isPcRoom);
+    toggleBtn.dataset.state = isOn ? 'on' : 'off';
+    toggleImg.src = isOn ? 'assets/off=on.webp' : 'assets/off=off.webp';
+    toggleImg.alt = isOn ? 'PC방 모드 ON' : 'PC방 모드 OFF';
+  }
+
+  // 기본값 OFF (백엔드에서 접속 상태 확인 후 setPcRoomToggleState 호출)
+  setPcRoomToggleState(false);
+
+  // ── 공유하기: 설정 / 토스트 / 모달 / SNS 핸들러 ──
+  // [BACKEND] 배포 시 아래 값만 교체하세요.
+  var SHARE_CONFIG = {
+    title:       '프리스타일 리부트 X 피카플레이 미션 이벤트 참가하기',
+    description: '프리스타일 리부트 X 피카플레이 미션 이벤트 참여하고 플레이 시간 보상을 획득하세요',
+    kakaoKey:    'd1c0c39f4dbac0062bf36527a3021357',
+    ogImage:     'https://ics.mediaweb.co.kr/_event/20260814_freestyle/assets/Thumbnail_1200x630.jpg'
+  };
+
+  var copyToast = document.getElementById('copyToast');
+  var copyToastTimer = null;
+  var DEFAULT_TOAST_MSG = '클립보드에 복사되었습니다.';
+  function showCopyToast(msg) {
+    if (!copyToast) { return; }
+    copyToast.textContent = msg || DEFAULT_TOAST_MSG;
+    copyToast.classList.add('is-visible');
+    if (copyToastTimer) { clearTimeout(copyToastTimer); }
+    copyToastTimer = setTimeout(function() {
+      copyToast.classList.remove('is-visible');
+    }, 2200);
+  }
+  function fallbackCopyText(text) {
+    var textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.setAttribute('readonly', '');
+    textarea.style.position = 'fixed';
+    textarea.style.opacity = '0';
+    document.body.appendChild(textarea);
+    textarea.select();
+    var copied = false;
+    try {
+      copied = document.execCommand('copy');
+    } catch (e) {}
+    document.body.removeChild(textarea);
+    return copied;
+  }
+  function copyUrlWithToast(url, toastMsg) {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(url).then(function() {
+        showCopyToast(toastMsg);
+      }).catch(function() {
+        if (fallbackCopyText(url)) { showCopyToast(toastMsg); }
+      });
+    } else if (fallbackCopyText(url)) {
+      showCopyToast(toastMsg);
+    }
+  }
+
+  // Kakao SDK 초기화
+  (function initKakao() {
+    if (!window.Kakao || !SHARE_CONFIG.kakaoKey) { return; }
+    if (Kakao.isInitialized && Kakao.isInitialized()) { return; }
+    try { Kakao.init(SHARE_CONFIG.kakaoKey); } catch (e) {}
+  })();
+
+  // 공유 모달 열기/닫기
+  var shareModal = document.getElementById('shareModal');
+  var shareModalClose = document.getElementById('shareModalClose');
+  var lastShareTrigger = null;
+  function openShareModal(trigger) {
+    if (!shareModal) { return; }
+    lastShareTrigger = trigger || null;
+    shareModal.classList.add('is-open');
+    shareModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    if (shareModalClose) { shareModalClose.focus(); }
+  }
+  function closeShareModal() {
+    if (!shareModal) { return; }
+    shareModal.classList.remove('is-open');
+    shareModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (lastShareTrigger && lastShareTrigger.focus) { lastShareTrigger.focus(); }
+  }
+  if (shareModal) {
+    shareModal.addEventListener('click', function(e) {
+      if (e.target === shareModal) { closeShareModal(); }
+    });
+  }
+  if (shareModalClose) {
+    shareModalClose.addEventListener('click', closeShareModal);
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && shareModal && shareModal.classList.contains('is-open')) {
+      closeShareModal();
+    }
+  });
+
+  // SNS별 공유 동작
+  function openPopup(url) {
+    var w = 600, h = 600;
+    var left = (window.screen.width  - w) / 2;
+    var top  = (window.screen.height - h) / 2;
+    window.open(url, '_blank', 'width=' + w + ',height=' + h + ',left=' + left + ',top=' + top + ',noopener');
+  }
+  function shareFacebook() {
+    var u = encodeURIComponent(window.location.href);
+    openPopup('https://www.facebook.com/sharer/sharer.php?u=' + u);
+  }
+  function shareTwitter() {
+    var u = encodeURIComponent(window.location.href);
+    var t = encodeURIComponent(SHARE_CONFIG.title);
+    openPopup('https://twitter.com/intent/tweet?url=' + u + '&text=' + t);
+  }
+  function shareNaver() {
+    var u = encodeURIComponent(window.location.href);
+    var t = encodeURIComponent(SHARE_CONFIG.title);
+    openPopup('https://share.naver.com/web/shareView?url=' + u + '&title=' + t);
+  }
+  function shareKakao() {
+    if (!window.Kakao || !Kakao.Share) { return; }
+    if (!Kakao.isInitialized || !Kakao.isInitialized()) { return; }
+    try {
+      Kakao.Share.sendDefault({
+        objectType: 'feed',
+        content: {
+          title: SHARE_CONFIG.title,
+          description: SHARE_CONFIG.description,
+          imageUrl: SHARE_CONFIG.ogImage,
+          link: {
+            mobileWebUrl: window.location.href,
+            webUrl: window.location.href
+          }
+        },
+        buttons: [{
+          title: '자세히 보기',
+          link: {
+            mobileWebUrl: window.location.href,
+            webUrl: window.location.href
+          }
+        }]
+      });
+    } catch (e) {}
+  }
+  function shareInstagram() {
+    // 인스타그램은 웹 URL 공유 API를 제공하지 않으므로 URL 복사 + 안내
+    copyUrlWithToast(window.location.href, 'URL이 복사되었습니다. 인스타그램에 붙여넣어 주세요.');
+  }
+  function shareCopy() {
+    copyUrlWithToast(window.location.href, '클립보드에 복사되었습니다.');
+  }
+  var SHARE_HANDLERS = {
+    kakao:     shareKakao,
+    facebook:  shareFacebook,
+    twitter:   shareTwitter,
+    naver:     shareNaver,
+    instagram: shareInstagram,
+    copy:      shareCopy
+  };
+  if (shareModal) {
+    shareModal.addEventListener('click', function(e) {
+      var target = e.target.closest ? e.target.closest('[data-share]') : null;
+      if (!target) { return; }
+      var type = target.getAttribute('data-share');
+      var handler = SHARE_HANDLERS[type];
+      if (typeof handler === 'function') {
+        handler();
+        // 카카오톡은 자체 팝업이 뜨므로 모달은 닫고, 나머지는 약간의 시각적 피드백 후 닫기
+        closeShareModal();
+      }
+    });
+  }
+
+  var btnShare = document.getElementById('btnShare');
+  if (btnShare) {
+    btnShare.addEventListener('click', function() { openShareModal(btnShare); });
+  }
+  var btnShareFloating = document.getElementById('btnShareFloating');
+  if (btnShareFloating) {
+    btnShareFloating.addEventListener('click', function() { openShareModal(btnShareFloating); });
+  }
+  var btnScrollTop = document.getElementById('btnScrollTop');
+  if (btnScrollTop) {
+    btnScrollTop.addEventListener('click', function (e) {
+      e.preventDefault();
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var behavior = reduce ? 'auto' : 'smooth';
+      // sticky 헤더(#top)에 scrollIntoView 하면 이미 보이는 요소로 판단해 스크롤이 안 올라가는 경우가 있음
+      try {
+        window.scrollTo({ top: 0, left: 0, behavior: behavior });
+      } catch (err) {
+        (document.scrollingElement || document.documentElement).scrollTop = 0;
+        document.body.scrollTop = 0;
+      }
+    });
+  }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/fullpage.js"></script>
+<script src="js/main.js"></script>
+<script src="js/kv-enter.js"></script>
+</body>
+</html>
