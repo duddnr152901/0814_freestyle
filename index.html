@@ -160,14 +160,6 @@ ul, ol {
     box-shadow: 0 0 30px rgba(182, 224, 44, 0.6);
   }
 }
-@keyframes kv-title-shine {
-  0% {
-    background-position: -150% 0%;
-  }
-  80%, 100% {
-    background-position: 250% 0%;
-  }
-}
 @keyframes cta-drow1 {
   0% {
     height: 0;
@@ -599,25 +591,6 @@ html.fs--stacked .kv {
   height: 100%;
   object-fit: contain;
   display: block;
-}
-.kv__title::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(100deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.425) 50%, rgba(255, 255, 255, 0) 70%);
-  background-repeat: no-repeat;
-  background-size: 300% 300%;
-  background-position: -150% 0%;
-  -webkit-mask-image: url("assets/img/kv/title.webp");
-  -webkit-mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-image: url("assets/img/kv/title.webp");
-  mask-size: contain;
-  mask-repeat: no-repeat;
-  mask-position: center;
-  animation: kv-title-shine 3s linear infinite;
-  pointer-events: none;
 }
 .kv__info {
   width: 46%;
@@ -1836,7 +1809,7 @@ html.fs--stacked .kv {
             <img src="assets/img/kv/kicker.webp" alt="상단 문구" />
           </div>
           <div class="kv__title">
-            <img src="assets/img/kv/title.webp" alt="메인 타이틀" />
+            <img src="assets/img/kv/titleEdit.png" alt="메인 타이틀" />
           </div>
           <div class="kv__info">
             <div class="kv__info-box">
